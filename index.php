@@ -17,7 +17,7 @@
 <body>
     <pre>
     <?php 
-       require "controle_remoto.php";
+       require "class_controle.php";
        
     ?>
     </pre>

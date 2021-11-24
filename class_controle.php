@@ -1,7 +1,7 @@
 <?php
-    require_once 'controlador.php';
+    require_once "interface_controlador.php";
 
-    class ControleRemoto implements Controlador {
+    abstract class ControleRemoto implements Controlador { // A classe também deve ser abstrata?
 
         private $volume;
         private $ligado;
