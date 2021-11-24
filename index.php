@@ -18,6 +18,8 @@
     <pre>
     <?php 
        require "class_controle.php";
+
+       $controle1 = new ControleRemoto;
        
     ?>
     </pre>

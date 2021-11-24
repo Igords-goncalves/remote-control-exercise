@@ -1,7 +1,7 @@
 <?php
     require_once "interface_controlador.php";
 
-    abstract class ControleRemoto implements Controlador { // A classe também deve ser abstrata?
+    class ControleRemoto implements Controlador { //O erro sumirá após implementar
 
         private $volume;
         private $ligado;
@@ -30,6 +30,48 @@
         }
         private function setTocando($tocando) {
             $this->tocando = $tocando;
+        }
+
+        // Implementação
+        
+        public function ligar(){
+            $this->setLigado(true);
+        }
+
+        public function desligar() {
+            $this->setLigado(false);
+        }
+
+        public function abrirMenu() {
+
+        }
+
+        public function fecharMenu() {
+
+        }
+
+        public function maisVolume() {
+
+        }
+
+        public function menosVolume(){
+
+        }
+
+        public function ligarMudo(){
+
+        }
+
+        public function desligarMudo(){
+
+        }
+
+        public function play(){
+
+        }
+
+        public function pause(){
+
         }
     }
 ?>
