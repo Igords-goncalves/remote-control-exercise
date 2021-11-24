@@ -8,7 +8,7 @@
         private $tocando;
 
         public function __construct() {
-            $this->volume = 50;
+            $this->volume = 30;
             $this->ligado = false;
             $this->tocando = false;
         }
@@ -43,19 +43,29 @@
         }
 
         public function abrirMenu() {
-
+            echo "<br> Está ligado?: " . $this->getLigado() ? "Sim" : "Não";
+            echo "<br> Está tocando?: " . $this->getTocando() ? "Sim" : "Não";
+            echo "<br> Volume: " . $this->getVolume();
+            for ($i=0; $i <= $this->getVolume(); $i=+ 10) {
+                echo "|";
+            }
+            echo "<br>";
         }
 
         public function fecharMenu() {
-
+            print("Menu fechado ...");
         }
 
         public function maisVolume() {
-
+            if (!!$this->getLigado()) {
+                $this->setVolume($this->getVolume() + 5);
+            }
         }
 
         public function menosVolume(){
-
+            if (!!$this->getLigado()) {
+                $this->setVolume($this->getVolume() - 5);
+            }
         }
 
         public function ligarMudo(){

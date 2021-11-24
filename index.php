@@ -21,6 +21,12 @@
 
        $controle1 = new ControleRemoto;
        
+       $controle1->desligar();
+
+       $controle1->abrirMenu();
+
+       print_r($controle1);
+       
     ?>
     </pre>
 </body>
