@@ -46,7 +46,7 @@
             echo "<br> Está ligado?: " . $this->getLigado() ? "Sim" : "Não";
             echo "<br> Está tocando?: " . $this->getTocando() ? "Sim" : "Não";
             echo "<br> Volume: " . $this->getVolume();
-            for ($i=0; $i <= $this->getVolume(); $i=+ 10) {
+            for ($i = 0; $i <= $this->getVolume(); $i =+ 10) {
                 echo "|";
             }
             echo "<br>";
